@@ -4,11 +4,11 @@
 %global __strip /bin/true
 %global _missing_build_ids_terminate_build 0
 %global _build_id_links none
-%global major_package_version 11-6
+%global major_package_version 11-8
 
 Name:           %(echo %real_name | tr '_' '-')
 Epoch:          1
-Version:        11.7.91
+Version:        11.8.86
 Release:        1%{?dist}
 Summary:        CUDA run time error detection tool for CUDA applications
 License:        CUDA Toolkit
@@ -49,6 +49,9 @@ install -m 0755 -p -D bin/%{name} %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
+* Fri Nov 11 2022 Simone Caronni <negativo17@gmail.com> - 1:11.8.86-1
+- Update to 11.8.86.
+
 * Sun Sep 04 2022 Simone Caronni <negativo17@gmail.com> - 1:11.7.91-1
 - Update to 11.7.91.
 
